@@ -1,0 +1,29 @@
+.vendor {
+  position: relative;
+}
+
+.vendor__loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 3px solid white;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Vendor.css.map */

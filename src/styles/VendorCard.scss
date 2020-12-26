@@ -1,0 +1,85 @@
+.card{
+    background: white;
+    text-align: right;
+    display: inline-flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: start;
+    border:1px solid #707070;
+    border-radius: 0 10px 10px 0;
+    margin:10px;
+    box-shadow:0 5px 5px rgba(#000, 0.3);
+    cursor: pointer;
+    user-select: none;
+
+    &:hover{
+        box-shadow:0 5px 5px rgba(#000,  0.45) ;
+    }
+
+    &:hover &__image-caption{
+        background: rgba(#000,  0.6);
+        color:#eee;
+    }
+
+    &__logo{
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 10px 10px 0;
+    }
+
+    &__image{
+        // border:1px solid blue;
+        min-width: 150px;
+        margin-bottom: -3px;
+    }
+
+    &__image-caption{
+        border:1px solid #777;
+        position: absolute;
+        width:100%;
+        left:0;
+        bottom:10px;
+        display: flex;
+        justify-content: center;
+        background: rgba(#000,  0.45);
+        color:#ccc;
+        font-weight: bold;
+        // &:hover{
+        //     background: rgba(#000,  0.8);
+        //     color:#ee9;
+        // }
+    }
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        margin:5px;
+        margin-top: 10px;
+    }
+
+    &__title{
+        // border:1px solid blue;
+        // flex:1 100%;
+        text-align: center;
+        font-weight: bold;
+        font-weight: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    &__detail{
+        // border:1px solid blue;
+        // flex:1 100%;
+        margin-bottom: 10px;
+    }
+
+    &__description{
+        // border:1px solid blue;
+        // flex:1 100%;
+        // width:150px;
+        min-width: 100px;
+        max-width: 150px;
+        margin-bottom: 10px;
+        color:#555;
+    }
+}

@@ -41,4 +41,7 @@ const mapStateToProps=state=>({
     error:state.vendors.error,
 });
 
+
+
+
 export default connect(mapStateToProps,{getVendors})(Vendor);
